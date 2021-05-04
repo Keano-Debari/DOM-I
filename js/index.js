@@ -40,3 +40,49 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const links = document.querySelectorAll("nav a");
+links[0].text = siteContent["nav"]["nav-item-1"];
+links[1].text = siteContent["nav"]["nav-item-2"];
+links[2].text = siteContent["nav"]["nav-item-3"];
+links[3].text = siteContent["nav"]["nav-item-4"];
+links[4].text = siteContent["nav"]["nav-item-5"];
+links[5].text = siteContent["nav"]["nav-item-6"];
+
+
+
+const title = document.querySelector("h1");
+title.textContent = 'DOM Is Awesome';
+
+const button = document.querySelector("button");
+button.textContent = 'Get Started';
+
+let header = document.getElementById("cta-img");
+header.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
+const contentTitle = document.getElementsByTagName("h4");
+contentTitle[0].innerText = siteContent["main-content"]["features-h4"];
+contentTitle[1].innerText = siteContent["main-content"]["about-h4"];
+contentTitle[2].innerText = siteContent["main-content"]["services-h4"];
+contentTitle[3].innerText = siteContent["main-content"]["product-h4"];
+contentTitle[4].innerText = siteContent["main-content"]["vision-h4"];
+
+const contentInfo = document.querySelectorAll("p");
+contentInfo[0].innerText = siteContent["main-content"]["features-content"];
+contentInfo[1].innerText = siteContent["main-content"]["about-content"];
+contentInfo[2].innerText = siteContent["main-content"]["services-content"];
+contentInfo[3].innerText = siteContent["main-content"]["product-content"];
+contentInfo[4].innerText = siteContent["main-content"]["vision-content"];
+
+const midImg = document.getElementById("middle-img");
+midImg.src = siteContent["main-content"]["middle-img-src"];
+
+const contactText = document.querySelectorAll(".contact p");
+contactText[0].innerText = siteContent["contact"]["address"];
+contactText[1].innerText = siteContent["contact"]["phone"];
+contactText[2].innerText = siteContent["contact"]["email"];
+
+const footer = document.querySelectorAll("footer p")[0];
+footer.innerText = siteContent["footer"]["copyright"];
+
